@@ -1,0 +1,64 @@
+﻿/* AnalyzePage.css styles embedded in index.css global, but adding dropzone specific */
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-xl);
+  padding: 64px 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition);
+  background: rgba(13, 31, 54, 0.5);
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone:hover, .dropzone.active {
+  border-color: var(--accent);
+  background: rgba(59, 130, 246, 0.05);
+  box-shadow: var(--shadow-glow);
+}
+
+.dropzone-content { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.dropzone-icon { color: var(--accent); opacity: 0.7; }
+.dropzone-content h3 { font-size: 1.375rem; color: var(--text-primary); }
+.dropzone-content p { color: var(--text-muted); font-size: 0.9375rem; }
+.dropzone-formats { display: flex; gap: 8px; align-items: center; }
+
+.preview-container {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,0,0,0.2);
+}
+
+.preview-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+  background: var(--bg-primary);
+}
+
+.preview-image {
+  max-height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.preview-meta {
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid var(--border);
+  background: rgba(0,0,0,0.1);
+}

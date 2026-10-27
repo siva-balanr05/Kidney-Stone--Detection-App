@@ -1,0 +1,44 @@
+{
+  "accuracy": 1.0,
+  "per_class": {
+    "Cyst": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Tumor": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      556,
+      0,
+      0
+    ],
+    [
+      0,
+      762,
+      0
+    ],
+    [
+      0,
+      0,
+      343
+    ]
+  ],
+  "test_size": 1661,
+  "class_names": [
+    "Cyst",
+    "Normal",
+    "Tumor"
+  ],
+  "note": "Evaluated on held-out test set (15% of dataset)."
+}

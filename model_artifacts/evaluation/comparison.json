@@ -1,0 +1,167 @@
+{
+  "CNN": {
+    "report": {
+      "Cyst": {
+        "precision": 0.8865814696485623,
+        "recall": 0.9982014388489209,
+        "f1-score": 0.9390862944162437,
+        "support": 556.0
+      },
+      "Normal": {
+        "precision": 0.954367666232073,
+        "recall": 0.9606299212598425,
+        "f1-score": 0.9574885546108568,
+        "support": 762.0
+      },
+      "Tumor": {
+        "precision": 1.0,
+        "recall": 0.7813411078717201,
+        "f1-score": 0.8772504091653028,
+        "support": 343.0
+      },
+      "accuracy": 0.9361830222757375,
+      "macro avg": {
+        "precision": 0.9469830452935452,
+        "recall": 0.913390822660161,
+        "f1-score": 0.9246084193974676,
+        "support": 1661.0
+      },
+      "weighted avg": {
+        "precision": 0.9411002160104999,
+        "recall": 0.9361830222757375,
+        "f1-score": 0.9347592707119827,
+        "support": 1661.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        555,
+        1,
+        0
+      ],
+      [
+        30,
+        732,
+        0
+      ],
+      [
+        41,
+        34,
+        268
+      ]
+    ]
+  },
+  "ResNet50": {
+    "report": {
+      "Cyst": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 556.0
+      },
+      "Normal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 762.0
+      },
+      "Tumor": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 343.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 1661.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 1661.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        556,
+        0,
+        0
+      ],
+      [
+        0,
+        762,
+        0
+      ],
+      [
+        0,
+        0,
+        343
+      ]
+    ]
+  },
+  "Random_Forest": {
+    "report": {
+      "Cyst": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 556.0
+      },
+      "Normal": {
+        "precision": 0.9973821989528796,
+        "recall": 1.0,
+        "f1-score": 0.9986893840104849,
+        "support": 762.0
+      },
+      "Tumor": {
+        "precision": 1.0,
+        "recall": 0.9941690962099126,
+        "f1-score": 0.9970760233918129,
+        "support": 343.0
+      },
+      "accuracy": 0.9987959060806743,
+      "macro avg": {
+        "precision": 0.9991273996509599,
+        "recall": 0.9980563654033041,
+        "f1-score": 0.9985884691340993,
+        "support": 1661.0
+      },
+      "weighted avg": {
+        "precision": 0.9987990581589972,
+        "recall": 0.9987959060806743,
+        "f1-score": 0.998794934761819,
+        "support": 1661.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        556,
+        0,
+        0
+      ],
+      [
+        0,
+        762,
+        0
+      ],
+      [
+        0,
+        2,
+        341
+      ]
+    ]
+  },
+  "meta": {
+    "class_names": [
+      "Cyst",
+      "Normal",
+      "Tumor"
+    ],
+    "test_size": 1661,
+    "note": "All models evaluated on the same held-out test set (15% of dataset)."
+  }
+}

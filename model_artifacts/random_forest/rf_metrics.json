@@ -1,0 +1,45 @@
+{
+  "accuracy": 0.9987959060806743,
+  "per_class": {
+    "Cyst": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Normal": {
+      "precision": 0.9973821989528796,
+      "recall": 1.0,
+      "f1": 0.9986893840104849
+    },
+    "Tumor": {
+      "precision": 1.0,
+      "recall": 0.9941690962099126,
+      "f1": 0.9970760233918129
+    }
+  },
+  "confusion_matrix": [
+    [
+      556,
+      0,
+      0
+    ],
+    [
+      0,
+      762,
+      0
+    ],
+    [
+      0,
+      2,
+      341
+    ]
+  ],
+  "test_size": 1661,
+  "class_names": [
+    "Cyst",
+    "Normal",
+    "Tumor"
+  ],
+  "feature_dim": 2048,
+  "note": "Evaluated on held-out test set using features from ResNet50 base (ImageNet weights)."
+}

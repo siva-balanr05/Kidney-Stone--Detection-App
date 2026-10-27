@@ -1,0 +1,5 @@
+{
+  "version": "1.0.0",
+  "input_size": "150x150",
+  "num_classes": 3
+}

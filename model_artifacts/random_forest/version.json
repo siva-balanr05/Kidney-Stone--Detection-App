@@ -1,0 +1,5 @@
+{
+  "version": "1.0.0",
+  "feature_dim": 2048,
+  "num_classes": 3
+}
